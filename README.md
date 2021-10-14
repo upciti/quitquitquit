@@ -62,7 +62,9 @@ spec:
             - image: image_without_curl:latest
               name: job
               command:
-                - /volume/shared/entrypoint.sh", "ls -la /"]
+                - /volume/shared/entrypoint.sh
+              args:
+                - "ls -la /"
               volumeMounts:
                 - name: shared
                   mountPath: "/volume"
