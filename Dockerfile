@@ -1,6 +1,4 @@
-ARG DEBIAN_VERSION="bullseye"
-
-FROM wakemeops/debian:${DEBIAN_VERSION}-slim
+FROM wakemeops/minideb:latest
 WORKDIR /shared
 
 RUN install_packages xh && \
